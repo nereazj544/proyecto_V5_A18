@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ReleasesService } from '../../../service/release.service';
+
 
 @Component({
   selector: 'app-novedades',
   standalone: true,
-  imports: [],
+  imports:[CommonModule],
   templateUrl: './novedades.component.html',
-  styleUrl: './novedades.component.css'
+  styleUrls: ['./novedades.component.css']
 })
-export class NovedadesComponent {
-
+export class NovedadesComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  
 }
